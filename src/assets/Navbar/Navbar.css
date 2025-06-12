@@ -1,0 +1,44 @@
+.nav-section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(230, 121, 44);
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding: 30px 75px;
+    color: rgb(247, 243, 243);
+    font-family: sans-serif;
+    z-index: 1000;
+}
+.coffee-logo{
+    padding: auto 5px;
+}
+.coffee-logo:hover{
+    cursor: pointer;
+}
+.coffee-logo img{
+    width: 55px;
+    height: auto;
+    margin-right: 10px;
+}
+.coffee-logo h3{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+}
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: bold;
+}
+.menu{
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.menu:hover{
+    background-color: rgb(119, 24, 17);   
+}

@@ -1,0 +1,24 @@
+.footer-section{
+    height: 20%;
+    background-color: rgb(43, 42, 42);
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+.social-media-icons{
+    padding: 15px 10px;
+    justify-content: space-between;
+}
+.social-media-icons img{
+    width: 25px;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.social-media-icons img:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.social-media-icons p{
+    margin: 10px 0px;
+}
