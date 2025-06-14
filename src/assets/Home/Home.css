@@ -92,6 +92,9 @@
     }
 }
 @media (max-width:500px) {
+    .home-section{
+        padding: 130px 50px;
+    }
     .right-side-home img{
         width: 250px;
     }

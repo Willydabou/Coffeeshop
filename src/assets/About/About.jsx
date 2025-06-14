@@ -12,7 +12,7 @@ function About(){
                 <h1>ABOUT US</h1>
                 <div className="about-container">
                     <div className="left-side-about">
-                        <img src={coffeeDrink} alt="man drinking coffee"/>
+                        <img src={coffeeDrink} alt="man drinking coffee" loading="lazy"/>
                     </div>
                     <div className="right-side-about">
                         

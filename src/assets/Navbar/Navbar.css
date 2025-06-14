@@ -35,10 +35,94 @@
     font-weight: bold;
 }
 .menu{
+    padding-top: 15px;
+}
+.menu span{
     padding: 10px 20px;
     border-radius: 30px;
     cursor: pointer;
 }
-.menu:hover{
+.menu span:hover{
     background-color: rgb(119, 24, 17);   
+}
+.nav-icon{
+    position: absolute;
+    right: 90px;
+    top: 30px;
+    display: none;
+}
+.nav-icon img{
+    width: 50px;
+    height: auto;
+}
+.close-icon{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.close-icon img{
+    width: 30px;
+    height: auto;
+}
+
+
+
+/*------------MEDIA QUERY-----------*/
+@media (max-width:1000px) {
+    .nav-menu{
+        font-size: 20px;
+    }
+}
+@media (max-width: 850px) {
+    .nav-section{
+        grid-template-columns: 1fr 1fr;
+    }
+    .nav-menu {
+        position: absolute;
+        top: 0;
+        left: -300px; /* hide offscreen by default */
+        flex-direction: column;
+        width: 250px;
+        height: auto;
+        background-color: rgb(66, 65, 65);
+        text-align: left;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-bottom-right-radius: 5px;
+        transition: left 0.6s ease;
+        z-index: 1000;
+    }
+    .menu {
+        margin: 20px 30px;
+    }
+    .nav-icon {
+        display: block;
+        z-index: 1100;
+    }
+    .close-icon {
+        
+        z-index: 1100;
+        left: -300px;
+        transition: left 0.6s ease;
+    }
+    .nav-menu.show {
+        left: 0; /* slide into view */
+    }
+    .close-icon.show{
+        left: 10px;
+    }
+}
+
+@media (max-width:500px) {
+    .nav-section{
+        padding: 30px 25px;   
+    }
+    .nav-icon{
+        right: 30px;
+    }
+}
+@media (max-width:380px) {
+    .coffee-logo h3{
+        font-size: 26px;
+    }
 }

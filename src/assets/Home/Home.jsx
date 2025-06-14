@@ -14,7 +14,7 @@ function Home(){
                     <button className='btn contact'>Contact us</button>
                 </div>
                 <div className="right-side-home">
-                    <img src={homeImage} alt="coffe-home-image" />
+                    <img src={homeImage} alt="coffe-home-image" loading="lazy"/>
                 </div>
             </div>
         </>

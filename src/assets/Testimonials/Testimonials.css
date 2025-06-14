@@ -42,7 +42,7 @@
 
 .arrow-left,
 .arrow-right {
-    margin-top: 75%;
+    margin-top: 120px;
     width: 0;
     height: 0;
     border-top: 20px solid transparent;
@@ -61,12 +61,12 @@
 .arrow-left:hover,.arrow-right:hover{
     opacity: 0.8;
 }
-/* Smooth fade-in effect */
+
 .testimonial-slide.transition {
     transition: all 0.9s ease-in-out;
 }
 
-/* Pagination Dots */
+
 .dots {
     text-align: center;
     margin-top: 10px;
@@ -88,3 +88,93 @@
 }
 
 
+
+
+
+
+/*--------------MEDIA QUERY------------*/
+@media (max-width:1000px) {
+    .testimonial-section{
+        padding: 50px;
+    }
+    .arrow-right{
+        margin-left: 70%;
+    }
+    .testimonial-card img{
+        width: 150px;
+        height: 150px;
+    }
+    .commentator{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .comments{
+        font-size: 18px;
+    }
+}
+@media (max-width:800px) {
+    .testimonial-section{
+        padding: 50px 20px;
+    }
+    .testimonial-card{
+        padding: 10px;
+    }
+    .testimonial-card img{
+        width: 100px;
+        height: 100px;
+    }
+    .arrow-left,
+    .arrow-right {
+        margin-top: 100px;
+    }
+    .commentator{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .comments{
+        font-size: 16px;
+    }
+}
+@media (max-width:650px) {
+    .arrow-right{
+        margin-left: 60%;
+    }   
+    .commentator{
+        font-size: 16px;
+    }
+    .comments{
+        font-size: 14px;
+    }
+}
+@media (max-width:500px) {
+    .testimonial-section{
+        padding: 50px 5px;
+    }
+    .arrow-left, .arrow-right{
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+    .arrow-left{
+        border-right: 10px solid rgb(119, 24, 17);
+    }
+    .arrow-right{
+        border-left: 10px solid rgb(119, 24, 17);
+    }   
+}
+@media (max-width:450px) {
+    .testimonial-slide{
+        grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
+    }
+    .testimonial-card{
+        padding: 10px 5px;
+        margin: 20px 5px;
+    }
+    .testimonial-card img{
+        width: 80px;
+        height: 80px;
+    }
+    .arrow-right{
+        margin-left: 50%;
+    }
+    
+}

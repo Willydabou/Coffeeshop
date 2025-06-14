@@ -65,7 +65,7 @@ function Testimonial(){
 
                     {visibleTestimonials.map((item, index) => (
                         <div className="testimonial-card" key={index}>
-                        <img src={item.img} alt={item.name} />
+                        <img src={item.img} alt={item.name} loading="lazy"/>
                         <h5 className="commentator">{item.name}</h5>
                         <p className="comments">"{item.text}"</p>
                         </div>

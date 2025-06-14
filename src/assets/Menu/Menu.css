@@ -65,7 +65,18 @@
     }
 }
 @media (max-width:650px) {
+    .menu-section{
+        padding: 50px;
+    }
     .menu-choices{
         grid-template-columns: 1fr;
+    }
+}
+@media (max-width:400px) {
+    .menu-section{
+        padding: 50px 20px;
+    }
+    .menu-card img{
+        height: 65%;
     }
 }
