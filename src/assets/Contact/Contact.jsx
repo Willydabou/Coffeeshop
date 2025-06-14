@@ -5,10 +5,10 @@ import phone from '/Images/phone-icon.png'
 import time from '/Images/time-icon.png'
 import website from '/Images/website-icon.png'
 
-function Contact(){
+function Contact({id}){
     return(
         <>
-            <div className="contact-section">
+            <div id={id} className="contact-section">
                 <h1>CONTACT US</h1>
                 <div className="contact-infos">
                     <div className="left-side-contact">

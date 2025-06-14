@@ -28,7 +28,7 @@ const testimonials = [
     { img: person06, name: "James Davis", text: "Top-notch quality. My go-to beans now!"},
   ];
 
-function Testimonial(){
+function Testimonial({id}){
 
     const [startIndex, setStartIndex] = useState(0);
     const totalSlides = Math.ceil(testimonials.length / 3);
@@ -57,7 +57,7 @@ function Testimonial(){
     
     return(
         <>
-        <div className="testimonial-section">
+        <div id={id} className="testimonial-section">
             <h1>TESTIMONIALS</h1>
             <div className="testimonial-slide">
 

@@ -2,10 +2,10 @@
 import './Home.css'
 import homeImage from '/Images/coffee-home.png'
 
-function Home(){
+function Home({id}){
     return(
         <>
-            <div className="home-section">
+            <div id={id} className="home-section">
                 <div className="left-side-home">
                     <h1>Best Coffee</h1>
                     <h4>Make your day great with our special coffee</h4>

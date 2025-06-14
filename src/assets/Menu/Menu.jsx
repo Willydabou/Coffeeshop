@@ -9,10 +9,10 @@ import burgerAndFries from '/Images/burger-frensh-fries.png'
 
 
 
-function Menu(){
+function Menu({id}){
     return(
         <>
-        <div className="menu-section">
+        <div id={id} className="menu-section">
             <h1>OUR MENU</h1>
             <div className="menu-choices">
                 <div className="menu-card">

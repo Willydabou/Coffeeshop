@@ -15,11 +15,11 @@ function App() {
   return (
     <>
       <Navbar/>
-      <Home/>
-      <About/>
-      <Menu/>
-      <Testimonial/>
-      <Contact/>
+      <Home id="home" />
+      <About id="about"/>
+      <Menu id="menu" />
+      <Testimonial id="testimonials"/>
+      <Contact id="contact" />
       <Footer/>
     </>
   )

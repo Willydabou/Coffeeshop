@@ -16,19 +16,27 @@ function Navbar(){
         setMenuOpen(false);
     };
 
+    const scrollToSection = (id) => {
+        const section = document.getElementById(id);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+        handleClose(); // close menu after scroll
+      };
+
     return(
         <>
             <div className="nav-section">
-                <div className="coffee-logo">
+                <div className="coffee-logo" onClick={() => scrollToSection('home')}>
                     <img src={logo} alt="coffee logo" />
                     <h3>Coffee</h3>
                 </div>
                 <div className={`nav-menu ${menuOpen ? 'show' : ''}`}>
-                    <div className="menu" onClick={handleClose}><span>Home</span></div>
-                    <div className="menu" onClick={handleClose}><span>About</span></div>
-                    <div className="menu" onClick={handleClose}><span>Menu</span></div>
-                    <div className="menu" onClick={handleClose}><span>Testimonials</span></div>
-                    <div className="menu" onClick={handleClose}><span>Contact</span></div>
+                    <div className="menu" onClick={() => scrollToSection('home')} ><span>Home</span></div>
+                    <div className="menu" onClick={() => scrollToSection('about')} ><span>About</span></div>
+                    <div className="menu" onClick={() => scrollToSection('menu')} ><span>Menu</span></div>
+                    <div className="menu" onClick={() => scrollToSection('testimonials')} ><span>Testimonials</span></div>
+                    <div className="menu" onClick={() => scrollToSection('contact')} ><span>Contact</span></div>
                 </div>
                 <div className="nav-icon" onClick={handleMenuToggle}>
                     <img src={navIcon} alt="navbar-icon" loading="lazy"/>

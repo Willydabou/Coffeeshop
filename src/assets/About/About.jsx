@@ -5,10 +5,10 @@ import x_logo from '/Images/x_logo.png'
 import './About.css'
 
 
-function About(){
+function About({id}){
     return(
         <>
-            <div className="about-section">
+            <div id={id} className="about-section">
                 <h1>ABOUT US</h1>
                 <div className="about-container">
                     <div className="left-side-about">

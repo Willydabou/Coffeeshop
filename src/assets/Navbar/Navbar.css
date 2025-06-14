@@ -57,8 +57,8 @@
 }
 .close-icon{
     position: absolute;
-    left: 10px;
     top: 10px;
+    left: -300px;
 }
 .close-icon img{
     width: 30px;
@@ -100,9 +100,7 @@
         z-index: 1100;
     }
     .close-icon {
-        
         z-index: 1100;
-        left: -300px;
         transition: left 0.6s ease;
     }
     .nav-menu.show {
