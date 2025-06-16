@@ -1,6 +1,6 @@
 
 import './Home.css'
-import homeImage from '/Images/coffee-home.png'
+import homeImage from '/Images/coffee-home.webp'
 
 function Home({id}){
     return(
